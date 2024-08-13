@@ -6,13 +6,12 @@ public class Play implements AdvancedMusicPlayer {
 
 	public void play(String audioType, String fileName) 
 	{
-		//inbuilt support to play mp3 music files
+		
 	      if(audioType.equalsIgnoreCase("localfile"))
 	      {
 	         System.out.println("Playing Local file. Name: " + fileName);			
 	      } 
 	      
-	      //mediaAdapter is providing support to play other file formats
 	      else if(audioType.equalsIgnoreCase("radio") || audioType.equalsIgnoreCase("Online"))
 	      {
 	         musicAdapter = new MusicAdapter(audioType);
