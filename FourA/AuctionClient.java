@@ -4,13 +4,13 @@ public class AuctionClient {
     public static void main(String[] args) {
         Auction auction = new Auction();
 
-        Bidder bidder1 = new Bidder("Alice");
-        Bidder bidder2 = new Bidder("Bob");
+        Bidder bidder1 = new Bidder("Rishita");
+        Bidder bidder2 = new Bidder("Sravya");
 
         auction.registerObserver(bidder1);
         auction.registerObserver(bidder2);
 
-        auction.itemAvailable("Antique Vase");
+        auction.itemAvailable("Ganesh chathurdhi Laddu");
         auction.startAuction();
         auction.endAuction();
 
